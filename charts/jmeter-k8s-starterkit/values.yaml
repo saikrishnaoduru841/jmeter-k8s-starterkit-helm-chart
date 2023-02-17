@@ -27,7 +27,7 @@ grafana:
   useBuiltInDashboard: true
   useBuiltInDatasource: true
   replicas: 1
-  image: docker.io/grafana/grafana:7.3.3
+  image: docker.io/grafana/grafana
   resources: 
     requests:
       memory: "256Mi"
@@ -54,7 +54,7 @@ grafana:
 # Infludb database used to store JMeter and telegraf data
 influxdb:
   enabled: true
-  image: docker.io/influxdb:1.8
+  image: docker.io/influxdb
   replicas: 1
   resources:
     requests:
